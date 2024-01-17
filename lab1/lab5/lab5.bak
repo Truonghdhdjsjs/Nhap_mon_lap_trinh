@@ -1,0 +1,84 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#include<math.h>
+void so_lon_nhat()
+{
+ 	float a,b,c;
+   cout<<" hay nhap so thu nhat:";
+   cin>>a;
+   cout<<" hya nhap so thu 2:";
+   cin>>b;
+   cout<<" hay nhap so thu 3:";
+   cin>>c;
+   float max=a;
+   if(max<b && b>c)
+   {
+   	cout<<" so lon nhat la :"<<b<<"\n";
+   }
+   else if(max<c && c>b)
+   {
+   	cout<<" so lon nhat la :"<<c;
+   }
+}
+void nam_nhuan()
+{
+	int nam;
+    cout<<" hay nhap so nam ban muon:";
+    cin>>nam;
+    if(nam %400==0 || nam%4==0 && nam%100!=0)
+    {
+    	cout<<" nam nhuan:"<<nam;
+    }
+    else
+    {
+    	cout<<" khong phao nam nhuan:"<<nam;
+    }
+}
+void ham_hoan_vi()
+{
+	float a,b,temp;
+   cout<<" hay nhap gia tri a:";
+   cin>>a;
+   cout<<" hay nhap gia tri b:";
+   cin>>b;
+
+   temp=a;
+   a=b;
+   b=temp;
+   cout<<" gia tri cua a la :"<<a;
+   cout<<" gia tri cua a la :"<<b;
+}
+void main()
+{
+	int menu;
+   cout<<" 1: tìm so gia tri lon nhat:\n";
+   cout<<" 2; hàm tinh nam nhuan:\n";
+   cout<<" 3: xay dung ham hoan vi :\n";
+   cout<<" ban hay chon so mình mong muon:";
+   cin>>menu;
+   switch(menu)
+   {
+   	case 1:
+      	{
+            so_lon_nhat();
+            break;
+         }
+      case 2:
+      	{
+             nam_nhuan();
+             break;
+         }
+      case 3:
+      	{
+            ham_hoan_vi();
+            break;
+         }
+      default:
+      	{
+         	cout<<" thoat chuong trinh:";
+            break;
+         }
+   }
+getch();
+}

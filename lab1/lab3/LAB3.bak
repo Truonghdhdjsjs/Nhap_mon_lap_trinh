@@ -1,0 +1,24 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+	int max,min;
+   float tong=0,biendem=0,trungbinh=0;
+   cout<<"hay nhap gia tri nho nhat :";
+   cin>>min;
+   cout<<"hayx nhap gia tri lon nhat:";
+   cin>>max;
+   for(int i=min;i<=max;i++)
+   {
+   	if(i%2==0)
+      {
+   		tong+=i;
+         biendem++;
+      }
+   }
+   trungbinh=tong/biendem;
+   cout<<" gia tri la :"<<trungbinh;
+getch();
+}

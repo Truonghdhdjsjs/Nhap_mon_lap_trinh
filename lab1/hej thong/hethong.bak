@@ -1,0 +1,27 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#include<math.h>
+
+void main()
+{
+	char userSys[] = "admin";
+    int passSys = 12345;
+    char user[100];
+    int pass;
+
+    cout << "Nhap ten tai khoan: ";
+    cin >> user;
+    cout << "Nhap mat khau: ";
+    cin >> pass;
+
+    if (strcmp(user, userSys) == 0 && pass == passSys) {
+		int menu;
+      cout<<" moi banj nhap du kien vao trong chuong trrinh::";
+      
+    } else {
+        cout << "Ten tai khoan hoac mat khau khong dung.";
+    }
+
+    getch();
+}
